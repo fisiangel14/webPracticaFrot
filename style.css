@@ -44,9 +44,31 @@ nav a {
 .hero {
     height: 60vh; /* Ocupa el 60% de la altura de la pantalla */
     display: flex;
-    flex-direction: column; /* Alinea los hijos (h1 y p) verticalmente */
+    flex-direction: column-reverse; /* Alinea los hijos (h1 y p) verticalmente */
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #ffffff;
+}
+
+.services {
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espacio entre las cards (como el aire entre servidores) */
+    flex-wrap: wrap; /* ¡CLAVE! Si se achica la pantalla, las cards bajan */
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px; /* Bordes redondeados = Look moderno */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombrita para que "flote" */
+    width: 300px; /* Ancho fijo para cada card */
+    border-top: 4px solid #1e293b; /* Detalle de color para coherencia */
 }
