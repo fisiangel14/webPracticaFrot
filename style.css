@@ -1,0 +1,52 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto hace que el padding no agrande la caja */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6; /* Espaciado entre líneas para que no canse la vista */
+    color: #333; /* Un gris muy oscuro es mejor que el negro puro */
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #1e293b; /* Un azul "profesional" */
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 150px;
+}
+/* especificidad: solo afecta a los ul dentro de nav */
+nav ul {
+    display: flex;   /*es necesaria para que los elementos se alineen horizontalmente*/
+    list-style: none; /* Quita los puntitos de la lista */
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Quita el subrayado de los links */
+    font-weight: bold;
+} 
+
+.hero {
+    height: 60vh; /* Ocupa el 60% de la altura de la pantalla */
+    display: flex;
+    flex-direction: column; /* Alinea los hijos (h1 y p) verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+}
