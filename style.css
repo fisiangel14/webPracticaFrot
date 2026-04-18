@@ -59,7 +59,7 @@ nav a {
 .services-container {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Espacio entre las cards (como el aire entre servidores) */
+    gap: 100px; /* Espacio entre las cards (como el aire entre servidores) */
     flex-wrap: wrap; /* ¡CLAVE! Si se achica la pantalla, las cards bajan */
     margin-top: 2rem;
 }
@@ -69,6 +69,12 @@ nav a {
     padding: 2rem;
     border-radius: 8px; /* Bordes redondeados = Look moderno */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombrita para que "flote" */
-    width: 300px; /* Ancho fijo para cada card */
+    width: 500px; /* Ancho fijo para cada card */
     border-top: 4px solid #1e293b; /* Detalle de color para coherencia */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* La card sube un poquito */
+    transition: 0.3s ease; /* Para que el movimiento sea suave y no un salto */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* La sombra se vuelve más profunda */
 }
